@@ -4,9 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @AllArgsConstructor
@@ -14,6 +12,7 @@ import javax.persistence.Id;
 @Entity
 public class StudentCourse {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "student_course")
     private Long id;
 

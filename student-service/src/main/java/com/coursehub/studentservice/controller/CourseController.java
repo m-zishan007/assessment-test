@@ -28,6 +28,4 @@ public class CourseController {
        return new ResponseEntity<>(courseResponseList, HttpStatus.OK);
     }
 
-
-
 }
